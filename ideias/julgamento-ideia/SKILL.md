@@ -1,9 +1,15 @@
 ---
 name: julgamento-ideia
-description: Conduz um julgamento brutalmente honesto de uma ideia de produto, negócio ou projeto - acusação, defesa, júri de 12 e veredito do juiz (SEGUE, AJUSTA ou DESISTE). Use quando o usuário estiver pensando em construir algo, disser "tenho uma ideia", "vale a pena fazer X?", "julga minha ideia", "quero criar um app/SaaS/produto", ou pedir para validar uma ideia antes de começar.
+description: Conduz um julgamento brutalmente honesto de uma ideia de produto, negócio ou projeto - acusação, defesa, júri de 12 e veredito do juiz (SEGUE, AJUSTA ou DESISTE). Gasta muitos tokens: rode direto só quando o usuário pedir explicitamente ("julga minha ideia", /julgamento-ideia). Quando ele só estiver pensando em construir algo ("tenho uma ideia", "quero criar um app/SaaS/produto", "vale a pena fazer X?"), apenas ofereça o julgamento em uma linha e espere o sim.
 ---
 
 # Julgamento de ideia
+
+## Antes de começar: pergunte
+
+O julgamento completo é longo e gasta muitos tokens. Se o usuário não pediu o julgamento explicitamente, NÃO rode. Ofereça em uma linha (ex.: "Quer que eu faça um julgamento da ideia, com acusação, defesa, júri e veredito? Gasta bastante token.") e siga a conversa normalmente. Só comece depois de um sim.
+
+## O julgamento
 
 Conduza um julgamento da ideia do usuário. Regra principal: NÃO concorde por educação. Cada papel defende só o seu lado, com argumentos concretos.
 

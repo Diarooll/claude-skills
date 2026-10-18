@@ -2,7 +2,7 @@
 
 ```
 julgamento-ideia → Superpowers (planejar) → Superpowers + 21st (construir)
-      → Graphify (entender) → security-audit (proteger) → LinkedIn (mostrar)
+      → Graphify (entender) → security-audit (proteger) → [opcional] LinkedIn (mostrar)
 ```
 
 Não precisa chamar cada ferramenta pelo nome: é só dizer o que quer fazer. A exceção é o julgamento, que pergunta antes de rodar porque gasta mais token.
@@ -28,5 +28,5 @@ Quando o projeto já tiver um tamanho razoável: "faz o mapa do projeto com o gr
 ## 5. Segurança → `security-audit`
 Antes de publicar, ou ao mexer em login, senha, pagamento ou dados de usuário. Procura injeção de SQL, rotas sem autenticação, chaves expostas etc. Não precisa rodar a cada commit.
 
-## 6. Divulgar → skills do LinkedIn
-Com o projeto pronto, `li-post` ou `li-carousel` para mostrar o que foi construído a recrutadores.
+## 6. (Opcional) Divulgar → skills do LinkedIn
+Só se quiser divulgar o projeto. Com ele pronto, `li-post` ou `li-carousel` para mostrar o que foi construído a recrutadores.

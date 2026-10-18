@@ -1,0 +1,4 @@
+/plugin install superpowers@claude-plugins-official
+
+pedir para desabitilar:
+SUPERPOWERS_DISABLE_TELEMETRY=1

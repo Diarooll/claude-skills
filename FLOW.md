@@ -28,10 +28,10 @@ Conversa e faz perguntas para definir o que construir. Depois escreve o plano: f
 
 ## 3. Visual e texto
 Antes de codar as telas.
-- **`frontend-design`:** define a cara do site (fonte, cores, layout) para não ficar com cara de template. Pedir: "define a direção visual do site".
+- **`frontend-design` + `sem-cara-de-ia`:** definem a cara do site (fonte, cores, layout) de acordo com o negócio, para não ficar com visual genérico de IA. Pedir: "define a direção visual do site".
 - **21st:** só a parte visual do frontend (React + Tailwind). Pedir: "uma tela de login do 21st", "um hero com cards do 21st". Não cria funcionalidades nem backend.
 - **`design:ux-copy`:** textos de títulos, botões, mensagens de erro. Pedir: "escreve os textos da home".
-- **`sem-cara-de-ia` / `li-human`:** passa os textos do site por aqui para não parecerem escritos por IA.
+- **`li-human`:** passa os textos do site por aqui para não parecerem escritos por IA (tira travessão, palavras típicas de IA etc.).
 - **Canva (opcional):** logo, imagens, banner.
 
 ## 4. Construção → Superpowers + 21st

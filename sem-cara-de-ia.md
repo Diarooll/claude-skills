@@ -9,8 +9,10 @@ Objetivo: o site deve parecer feito por um designer que conhece o negócio, não
 
 ## Antes de codar
 
-1. Descubra o tipo de negócio, o público e o clima (firme, acolhedor, luxuoso, popular...).
-2. Escolha UMA direção visual e siga ela do início ao fim. Escreva em 1 linha (ex.: "barbearia clássica: preto, âmbar, serifa forte").
+1. Pergunte ao usuário o tipo de negócio, o público e o clima (firme, acolhedor, luxuoso, popular...). Não suponha.
+2. Proponha 2 ou 3 direções visuais (paleta com os códigos das cores + par de fontes + ideia de layout) e deixe o usuário escolher. Use a ferramenta de perguntas com opções e marque uma como recomendada.
+3. Escreva a direção escolhida em 1 linha (ex.: "barbearia clássica: preto, âmbar, serifa forte") e siga ela do início ao fim.
+4. Se durante o trabalho quiser mudar cor, fonte ou layout, pergunte antes. Nunca troque a direção escolhida por conta própria.
 
 ## Tipografia
 

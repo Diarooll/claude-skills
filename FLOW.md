@@ -25,11 +25,20 @@ Pedir: "julga minha ideia" ou `/julgamento-ideia`.
 ## 2. Desenho → Superpowers (brainstorming + plano)
 Entre em **plan mode** antes de começar (Shift+Tab). Assim o Claude só lê e planeja, sem mexer em nada, e você aprova o plano antes de construir.
 Conversa e faz perguntas para definir o que construir. Depois escreve o plano: funcionalidades, arquitetura e tarefas em ordem.
+
+**O Claude PERGUNTA, não decide sozinho.** Antes de escrever o plano, ele faz estas perguntas (uma ou duas por vez, com opções e uma recomendada, e mostrando exemplos quando ajudar):
+1. **Tema:** sobre o que é o site, para quem, e qual o clima (acolhedor, sério, divertido, luxuoso...).
+2. **Cores:** 2 ou 3 paletas para escolher, cada uma com os códigos das cores. Pode trazer as suas também (logo, fachada, referência).
+3. **Fontes e estilo:** 2 ou 3 combinações de fonte de título + texto, e o estilo do layout.
+4. **Como vai ser feito:** HTML simples ou React + Vite, onde fica a pasta, se vai ter backend.
+5. **Ferramentas:** quais usar neste projeto (21st, Canva, Lovable, Graphify...) e quais pular.
+
+Só depois das respostas o plano é escrito, e nele fica marcado o que foi escolha sua e o que foi sugestão do Claude.
 - **Só app:** `engineering:system-design` para decidir backend, banco e login. Pedir: "como eu arquiteto o backend disso?".
 
 ## 3. Visual e texto
 Antes de codar as telas.
-- **`frontend-design` + `sem-cara-de-ia`:** definem a cara do site (fonte, cores, layout) de acordo com o negócio, para não ficar com visual genérico de IA. Pedir: "define a direção visual do site".
+- **`frontend-design` + `sem-cara-de-ia`:** conferem se as cores, fontes e layout escolhidos na etapa 2 não ficaram com cara de IA. Se o Claude quiser mudar algo, ele **pergunta antes** e mostra a alternativa, em vez de trocar por conta própria.
 - **21st:** só a parte visual do frontend (React + Tailwind). Precisa de Node (ver `ferramentas/README.md`). No plano grátis são só **2 componentes por dia**: use para o que for mais trabalhoso, não para navbar simples. Pedir: "uma tela de login do 21st", "um hero com cards do 21st". Não cria funcionalidades nem backend.
 - **`design:ux-copy`:** textos de títulos, botões, mensagens de erro. Pedir: "escreve os textos da home".
 - **`li-human`:** passa os textos do site por aqui para não parecerem escritos por IA (tira travessão, palavras típicas de IA etc.).

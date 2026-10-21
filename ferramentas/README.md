@@ -25,3 +25,11 @@ Mais de 10 mil componentes React/Tailwind prontos. Chave grátis em https://21st
 ```
 claude mcp add --scope user --transport http 21st https://21st.dev/api/mcp --header "x-api-key: SUA_CHAVE"
 ```
+
+## Design e Engineering (plugins da Anthropic)
+Vêm sincronizados da conta do claude.ai (aparecem como `design:*` e `engineering:*`). As pastas `design/` e `engineering/` na raiz deste repo são uma cópia de backup das skills (sem os conectores MCP).
+Skills usadas no flow de site: `design:ux-copy`, `design:design-critique`, `design:accessibility-review`, `engineering:system-design`, `engineering:deploy-checklist`.
+Para usar numa máquina sem a sincronização, carregar as pastas como plugin local:
+```
+claude --plugin-dir ./design --plugin-dir ./engineering
+```

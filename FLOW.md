@@ -23,20 +23,25 @@ Antes de começar, testa se a ideia vale a pena. Termina com SEGUE, AJUSTA ou DE
 Pedir: "julga minha ideia" ou `/julgamento-ideia`.
 
 ## 2. Desenho → Superpowers (brainstorming + plano)
+Entre em **plan mode** antes de começar (Shift+Tab). Assim o Claude só lê e planeja, sem mexer em nada, e você aprova o plano antes de construir.
 Conversa e faz perguntas para definir o que construir. Depois escreve o plano: funcionalidades, arquitetura e tarefas em ordem.
 - **Só app:** `engineering:system-design` para decidir backend, banco e login. Pedir: "como eu arquiteto o backend disso?".
 
 ## 3. Visual e texto
 Antes de codar as telas.
 - **`frontend-design` + `sem-cara-de-ia`:** definem a cara do site (fonte, cores, layout) de acordo com o negócio, para não ficar com visual genérico de IA. Pedir: "define a direção visual do site".
-- **21st:** só a parte visual do frontend (React + Tailwind). Pedir: "uma tela de login do 21st", "um hero com cards do 21st". Não cria funcionalidades nem backend.
+- **21st:** só a parte visual do frontend (React + Tailwind). Precisa de Node (ver `ferramentas/README.md`). No plano grátis são só **2 componentes por dia**: use para o que for mais trabalhoso, não para navbar simples. Pedir: "uma tela de login do 21st", "um hero com cards do 21st". Não cria funcionalidades nem backend.
 - **`design:ux-copy`:** textos de títulos, botões, mensagens de erro. Pedir: "escreve os textos da home".
 - **`li-human`:** passa os textos do site por aqui para não parecerem escritos por IA (tira travessão, palavras típicas de IA etc.).
 - **Canva (opcional):** logo, imagens, banner.
 
 ## 4. Construção → Superpowers + 21st
 - **Superpowers:** executa o plano tarefa por tarefa, escreve os testes primeiro e confere que tudo passa antes de dizer que terminou. Em bug, investiga passo a passo em vez de chutar.
-- **Ver rodando:** `run` ou `claude-in-chrome` abrem o site e tiram print. Pedir: "abre o site e me mostra como ficou no desktop e no celular".
+- **Ver rodando:** usar o **Brave** (é o navegador instalado; não tem Chrome). Pedir: "abre o site no Brave e me mostra como ficou no desktop e no celular". O Claude tira o print assim:
+  ```
+  brave --headless --hide-scrollbars --virtual-time-budget=5000 --window-size=390,844 --screenshot=$HOME/prints/celular.png http://localhost:5173
+  ```
+  O Brave é snap: salvar o print numa pasta da home (não em `/tmp` nem em pasta oculta). Use `--window-size=1440,900` para desktop.
 
 ## 5. Revisão
 - **`design:design-critique`:** crítica do visual (hierarquia, espaçamento, consistência). Pedir: "critica o design da home".

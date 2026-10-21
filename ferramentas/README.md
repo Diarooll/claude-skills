@@ -11,6 +11,16 @@ Em `~/.claude/settings.json`, desligar a telemetria:
 "env": { "SUPERPOWERS_DISABLE_TELEMETRY": "1" }
 ```
 
+## Node.js (para projetos React/Vite e componentes do 21st)
+Instalado pelo nvm, sem sudo:
+```
+curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install --lts
+```
+
+## Brave (ver o site rodando)
+Navegador usado para abrir o site e tirar print (não tem Chrome instalado). Instalado via snap (`/snap/bin/brave`).
+
 ## Graphify (skill)
 Monta um mapa (grafo) do projeto para o Claude consultar sem reler tudo. Uso: `/graphify .` na pasta do projeto.
 ```

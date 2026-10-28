@@ -1,7 +1,7 @@
 # Flow para construir um site ou software com as skills
 
 ```
-julgamento-ideia → Superpowers + grilling (planejar) → visual e texto → Superpowers + 21st (construir e ver rodando)
+julgamento-ideia → Superpowers + grilling (planejar) → visual e texto (taste) → Superpowers + 21st (construir e ver rodando)
       → revisar (design, acessibilidade, código, Graphify, security-audit) → publicar → [opcional] LinkedIn (mostrar)
 ```
 
@@ -16,6 +16,7 @@ Não precisa chamar cada ferramenta pelo nome: é só dizer o que quer fazer. A 
 | `security-audit` | rápido (chaves expostas, formulário) | completo, obrigatório |
 | Visual, texto, acessibilidade | capricha | usa |
 | `grilling` | opcional | sempre (antes de aprovar o plano) |
+| `design-taste-frontend` | modo site | modo telas de app (dashboard, admin, configurações) |
 
 Quer algo rápido na nuvem sem construir local? Use o **Lovable** no lugar das etapas 3 e 4.
 
@@ -40,6 +41,7 @@ Só depois das respostas o plano é escrito, e nele fica marcado o que foi escol
 
 ## 3. Visual e texto
 Antes de codar as telas.
+- **`design-taste-frontend`:** direção de arte baseada em sites premiados: sugere composição, tipografia, paleta e blocos de seção, e depois confere com prints e corrige o que ficou genérico. Serve para site e para telas de app (dashboard, admin). Como na etapa 2, **ele sugere e você escolhe**.
 - **`frontend-design` + `sem-cara-de-ia`:** conferem se as cores, fontes e layout escolhidos na etapa 2 não ficaram com cara de IA. Se o Claude quiser mudar algo, ele **pergunta antes** e mostra a alternativa, em vez de trocar por conta própria.
 - **21st:** só a parte visual do frontend (React + Tailwind). Precisa de Node (ver `ferramentas/README.md`). No plano grátis são só **2 componentes por dia**: use para o que for mais trabalhoso, não para navbar simples. Pedir: "uma tela de login do 21st", "um hero com cards do 21st". Não cria funcionalidades nem backend.
 - **`design:ux-copy`:** textos de títulos, botões, mensagens de erro. Pedir: "escreve os textos da home".

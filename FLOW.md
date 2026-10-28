@@ -1,11 +1,13 @@
-# Flow para construir um site com as skills
+# Flow para construir um site ou software com as skills
 
 ```
-julgamento-ideia → Superpowers (planejar) → visual e texto → Superpowers + 21st (construir e ver rodando)
-      → revisar (design, acessibilidade, código, Graphify, security-audit) → publicar → [opcional] LinkedIn (mostrar)
+julgamento-ideia → Superpowers + grilling (planejar) → visual e texto (taste) → Superpowers + 21st (construir e ver rodando com agent-browser)
+      → revisar (design, acessibilidade, código, Graphify, security-audit) → publicar → [opcional] vídeo (hyperframes) + LinkedIn (mostrar)
 ```
 
 Não precisa chamar cada ferramenta pelo nome: é só dizer o que quer fazer. A exceção é o julgamento, que pergunta antes de rodar porque gasta mais token.
+
+Faltou alguma ferramenta em qualquer etapa? **`find-skills`** procura uma skill pronta: "tem alguma skill pra X?".
 
 ## Landing page ou app?
 
@@ -15,6 +17,8 @@ Não precisa chamar cada ferramenta pelo nome: é só dizer o que quer fazer. A 
 | Testes (TDD) | só no que tiver lógica (formulário etc.) | sempre |
 | `security-audit` | rápido (chaves expostas, formulário) | completo, obrigatório |
 | Visual, texto, acessibilidade | capricha | usa |
+| `grilling` | opcional | sempre (antes de aprovar o plano) |
+| `design-taste-frontend` | modo site | modo telas de app (dashboard, admin, configurações) |
 
 Quer algo rápido na nuvem sem construir local? Use o **Lovable** no lugar das etapas 3 e 4.
 
@@ -35,9 +39,11 @@ Conversa e faz perguntas para definir o que construir. Depois escreve o plano: f
 
 Só depois das respostas o plano é escrito, e nele fica marcado o que foi escolha sua e o que foi sugestão do Claude.
 - **Só app:** `engineering:system-design` para decidir backend, banco e login. Pedir: "como eu arquiteto o backend disso?".
+- **`grilling`:** antes de aprovar o plano, o Claude te interroga sobre ele (casos extremos, o que acontece se der errado, o que ficou vago) até não sobrar furo. Pedir: "me grelha sobre esse plano".
 
 ## 3. Visual e texto
 Antes de codar as telas.
+- **`design-taste-frontend`:** direção de arte baseada em sites premiados: sugere composição, tipografia, paleta e blocos de seção, e depois confere com prints e corrige o que ficou genérico. Serve para site e para telas de app (dashboard, admin). Como na etapa 2, **ele sugere e você escolhe**.
 - **`frontend-design` + `sem-cara-de-ia`:** conferem se as cores, fontes e layout escolhidos na etapa 2 não ficaram com cara de IA. Se o Claude quiser mudar algo, ele **pergunta antes** e mostra a alternativa, em vez de trocar por conta própria.
 - **21st:** só a parte visual do frontend (React + Tailwind). Precisa de Node (ver `ferramentas/README.md`). No plano grátis são só **2 componentes por dia**: use para o que for mais trabalhoso, não para navbar simples. Pedir: "uma tela de login do 21st", "um hero com cards do 21st". Não cria funcionalidades nem backend.
 - **`design:ux-copy`:** textos de títulos, botões, mensagens de erro. Pedir: "escreve os textos da home".
@@ -46,7 +52,8 @@ Antes de codar as telas.
 
 ## 4. Construção → Superpowers + 21st
 - **Superpowers:** executa o plano tarefa por tarefa, escreve os testes primeiro e confere que tudo passa antes de dizer que terminou. Em bug, investiga passo a passo em vez de chutar.
-- **Ver rodando:** usar o **Brave** (é o navegador instalado; não tem Chrome). Pedir: "abre o site no Brave e me mostra como ficou no desktop e no celular". O Claude tira o print assim:
+- **Ver rodando → `agent-browser`:** abre o site, clica, preenche formulário, tira print e testa fluxos (login, cadastro) como um usuário. Precisa da CLI (ver `ferramentas/README.md`). Pedir: "abre o site e testa o cadastro", "tira print no desktop e no celular".
+- **Plano B, só print com o Brave** (é o navegador instalado; não tem Chrome). O Claude tira o print assim:
   ```
   brave --headless --hide-scrollbars --virtual-time-budget=5000 --window-size=390,844 --screenshot=$HOME/prints/celular.png http://localhost:5173
   ```
@@ -68,5 +75,7 @@ Antes de codar as telas.
 2. **`engineering:deploy-checklist`:** checklist antes de ir pro ar (variáveis de ambiente, domínio, migrations, como voltar atrás). Pedir: "checklist de deploy".
 3. **`superpowers:finishing-a-development-branch`:** fecha o branch (merge ou PR).
 
-## 7. (Opcional) Divulgar → skills do LinkedIn
-Só se quiser divulgar o projeto. Com ele pronto, `li-post` ou `li-carousel` para mostrar o que foi construído a recrutadores.
+## 7. (Opcional) Divulgar → hyperframes + skills do LinkedIn
+Só se quiser divulgar o projeto.
+- **`hyperframes`:** vídeo curto de demo do software (feito em HTML e renderizado em MP4, também na vertical). Pedir: "faz um vídeo de 30s mostrando o app".
+- **`li-post` ou `li-carousel`:** post mostrando o que foi construído a recrutadores (dá pra anexar o vídeo).

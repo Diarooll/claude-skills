@@ -1,7 +1,7 @@
 # Flow para construir um site ou software com as skills
 
 ```
-julgamento-ideia → Superpowers + grilling (planejar) → visual e texto (taste) → Superpowers + 21st (construir e ver rodando com agent-browser)
+julgamento-ideia → Superpowers + grilling (planejar) → visual e texto (taste) → Superpowers + 21st (construir e ver rodando)
       → revisar (design, acessibilidade, código, Graphify, security-audit) → publicar → [opcional] vídeo (hyperframes) + LinkedIn (mostrar)
 ```
 
@@ -52,8 +52,7 @@ Antes de codar as telas.
 
 ## 4. Construção → Superpowers + 21st
 - **Superpowers:** executa o plano tarefa por tarefa, escreve os testes primeiro e confere que tudo passa antes de dizer que terminou. Em bug, investiga passo a passo em vez de chutar.
-- **Ver rodando → `agent-browser`:** abre o site, clica, preenche formulário, tira print e testa fluxos (login, cadastro) como um usuário. Precisa da CLI (ver `ferramentas/README.md`). Pedir: "abre o site e testa o cadastro", "tira print no desktop e no celular".
-- **Plano B, só print com o Brave** (é o navegador instalado; não tem Chrome). O Claude tira o print assim:
+- **Ver rodando:** usar o **Brave** (é o navegador instalado; não tem Chrome). Pedir: "abre o site no Brave e me mostra como ficou no desktop e no celular". O Claude tira o print assim:
   ```
   brave --headless --hide-scrollbars --virtual-time-budget=5000 --window-size=390,844 --screenshot=$HOME/prints/celular.png http://localhost:5173
   ```

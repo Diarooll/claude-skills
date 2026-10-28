@@ -7,10 +7,8 @@ Para reinstalar, copiar a pasta para `~/.claude/skills/<nome>`.
 |---|---|---|
 | `hyperframes` | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) (`skills/hyperframes`) | Fazer vídeos com HTML (demo, lançamento, explicação) |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) (`skills/find-skills`) | Procurar e instalar skills novas |
-| `agent-browser` | [vercel-labs/agent-browser](https://github.com/vercel-labs/agent-browser) (`skills/agent-browser`) | Controlar o navegador (abrir, clicar, print, testar) |
 | `grilling` | [mattpocock/skills](https://github.com/mattpocock/skills) (`skills/productivity/grilling`) | Interrogar um plano até achar os furos |
 | `design-taste-frontend` | [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) (`skills/taste-skill`) | Direção de arte anti "cara de IA" para sites e telas |
 
 ## Dependências
-- `agent-browser` é só um ponteiro: precisa da CLI (`npm i -g agent-browser && agent-browser install`).
 - `hyperframes` usa a CLI via `npx hyperframes` (Node).

@@ -44,9 +44,5 @@ Para usar numa máquina sem a sincronização, carregar as pastas como plugin lo
 claude --plugin-dir ./design --plugin-dir ./engineering
 ```
 
-## Skills externas (hyperframes, find-skills, agent-browser, grilling, design-taste-frontend)
+## Skills externas (hyperframes, find-skills, grilling, design-taste-frontend)
 Backup em `skills-externas/` (ver o README de lá). Reinstalar: copiar cada pasta para `~/.claude/skills/`.
-O `agent-browser` precisa da CLI:
-```
-npm i -g agent-browser && agent-browser install
-```

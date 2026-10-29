@@ -57,6 +57,7 @@ Antes de codar as telas.
   O Brave é snap: salvar o print numa pasta da home (não em `/tmp` nem em pasta oculta). Use `--window-size=1440,900` para desktop.
 
 ## 5. Revisão
+- **`avaliacao-design`:** roda `design-critique`, `design-system` e `accessibility-review` de uma vez e entrega um relatório só, com contraste calculado, semântica, tokens e ordem de correção. Faz parte desta etapa, mas **também funciona sozinha a qualquer momento**: no meio da construção, depois de mudar o visual, ou em um projeto que já existe. Só avalia, não altera nada; depois você escolhe quais correções aplicar, aos poucos. Pedir: "avaliacao-design" ou "avalie o design".
 - **`design:design-critique`:** crítica do visual (hierarquia, espaçamento, consistência). Pedir: "critica o design da home".
 - **`design:accessibility-review`:** contraste, navegação por teclado, leitor de tela. Pedir: "audita a acessibilidade".
 - **`code-review`:** revisão do código antes do merge. Pedir: `/code-review`.

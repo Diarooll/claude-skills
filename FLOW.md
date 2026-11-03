@@ -67,6 +67,7 @@ Antes de codar as telas.
   - Perguntas: "o que quebra se eu mudar X?", `/graphify query "..."`.
   - Colocar `graphify-out/` no `.gitignore`.
 - **`security-audit`:** antes de publicar, ou ao mexer em login, senha, pagamento ou dados de usuário. Procura injeção de SQL, rotas sem autenticação, chaves expostas etc. Não precisa rodar a cada commit.
+- **`auditoria-lgpd`:** antes de abrir o app para usuários de verdade, principalmente se ele guarda dado pessoal ou financeiro. Pesquisa o que a LGPD exige hoje, mapeia os dados que o app trata e entrega um relatório em português simples, com os problemas em ordem de prioridade (P0 a P3). Só lê, não altera nada; depois você escolhe quais correções aplicar, item por item. Complementa o `security-audit`: ele caça falhas técnicas, esta olha política de privacidade, consentimento, exclusão de conta e terceiros. Pedir: "faz a auditoria de LGPD" ou "o app está adequado à LGPD?".
 
 ## 6. Publicar
 1. **`superpowers:verification-before-completion`:** roda tudo e confirma que funciona de verdade.

@@ -8,6 +8,8 @@ Para reinstalar, copiar a pasta para `~/.claude/skills/<nome>`.
 | `hyperframes` | [heygen-com/hyperframes](https://github.com/heygen-com/hyperframes) (`skills/hyperframes`) | Fazer vídeos com HTML (demo, lançamento, explicação) |
 | `find-skills` | [vercel-labs/skills](https://github.com/vercel-labs/skills) (`skills/find-skills`) | Procurar e instalar skills novas |
 | `grilling` | [mattpocock/skills](https://github.com/mattpocock/skills) (`skills/productivity/grilling`) | Interrogar um plano até achar os furos |
+| `domain-modeling` | [mattpocock/skills](https://github.com/mattpocock/skills) (`skills/engineering/domain-modeling`) | Definir os termos do projeto (`GLOSSARY.md`) e registrar decisões difíceis (ADRs) |
+| `grill-with-docs` | [mattpocock/skills](https://github.com/mattpocock/skills) (`skills/engineering/grill-with-docs`) | Atalho manual `/grill-with-docs`: roda `grilling` + `domain-modeling` |
 | `design-taste-frontend` | [leonxlnx/taste-skill](https://github.com/leonxlnx/taste-skill) (`skills/taste-skill`) | Direção de arte anti "cara de IA" para sites e telas |
 
 ## Dependências

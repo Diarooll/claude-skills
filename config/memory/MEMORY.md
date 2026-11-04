@@ -1,0 +1,2 @@
+- [Usar Brave](usar-brave.md) — navegador para abrir sites e tirar prints (sem Chrome)
+- [Perguntar escolhas de site](perguntar-escolhas-de-site.md) — perguntar tema, cores, fontes, stack e ferramentas antes de planejar

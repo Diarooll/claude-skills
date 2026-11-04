@@ -2,6 +2,11 @@
 
 Como reinstalar tudo numa máquina nova.
 
+## Skills, CLAUDE.md e memórias
+Na raiz do repo, rode `git pull && ./instalar.sh`. Pode rodar de novo sempre que atualizar.
+Ele copia as skills para `~/.claude/skills/`, atualiza as seções do `~/.claude/CLAUDE.md` que vêm de `config/CLAUDE.md` (guardando o anterior em `CLAUDE.md.bak`) e instala as memórias de `config/memory/`.
+O restante desta página ele não instala.
+
 ## Superpowers (plugin)
 ```
 claude plugin install superpowers@claude-plugins-official
@@ -44,5 +49,5 @@ Para usar numa máquina sem a sincronização, carregar as pastas como plugin lo
 claude --plugin-dir ./design --plugin-dir ./engineering
 ```
 
-## Skills externas (hyperframes, find-skills, grilling, design-taste-frontend)
-Backup em `skills-externas/` (ver o README de lá). Reinstalar: copiar cada pasta para `~/.claude/skills/`.
+## Skills externas (hyperframes, find-skills, grilling, domain-modeling, grill-with-docs, design-taste-frontend)
+Backup em `skills-externas/` (ver o README de lá). O `instalar.sh` já copia todas para `~/.claude/skills/`.
